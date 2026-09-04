@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Getränke Weinand | Getränkefachgroßhandel & Markt Boppard</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brandDark: '#0f172a',
+                        brandEmerald: '#10b981',
+                        brandGreen: '#059669',
+                        brandGold: '#f59e0b',
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .hero-bg {
+            background: linear-gradient(rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.9)), url('https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased">
+
+    <!-- TOP BAR -->
+    <div class="bg-brandDark text-slate-300 text-xs py-2 px-6 flex justify-between items-center border-b border-slate-800">
+        <div class="flex items-center space-x-6">
+            <span><i class="fa-solid fa-location-dot text-brandEmerald mr-2"></i>Mühltal 102, 56154 Boppard</span>
+            <span class="hidden md:inline"><i class="fa-solid fa-clock text-brandEmerald mr-2"></i>Mo-Fr: 08:30–19:00 | Sa: 08:30–16:00</span>
+        </div>
+        <div class="flex items-center space-x-4">
+            <a href="tel:+4967422037" class="hover:text-white transition"><i class="fa-solid fa-phone text-brandGold mr-1"></i> 06742 / 2037</a>
+            <span class="bg-brandEmerald/20 text-brandEmerald px-2 py-0.5 rounded text-[10px] font-semibold tracking-wide">B2B & RETAIL</span>
+        </div>
+    </div>
+
+    <!-- NAVIGATION -->
+    <nav class="sticky top-0 z-50 bg-white/95 backdrop-blur shadow-sm border-b border-slate-100">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 bg-brandGreen text-white rounded-xl flex items-center flex-shrink-0 justify-center font-bold text-xl shadow-md shadow-brandGreen/20">
+                    <i class="fa-solid fa-wine-bottle"></i>
+                </div>
+                <div>
+                    <span class="text-xl font-extrabold text-slate-900 tracking-tight block leading-none">Getränke Weinand</span>
+                    <span class="text-xs text-slate-500 font-medium">Großhandel & EPONA Fachmarkt</span>
+                </div>
+            </div>
+            
+            <div class="hidden md:flex items-center space-x-8 font-medium text-sm text-slate-600">
+                <a href="#services" class="hover:text-brandGreen transition">Leistungen</a>
+                <a href="#assortment" class="hover:text-brandGreen transition">Sortiment</a>
+                <a href="#event-calculator" class="hover:text-brandGreen transition">Event-Rechner</a>
+                <a href="#b2b-portal" class="hover:text-brandGreen transition">B2B Bestelleingang</a>
+                <a href="#contact" class="hover:text-brandGreen transition">Kontakt</a>
+            </div>
+
+            <a href="#b2b-portal" class="bg-brandGreen hover:bg-emerald-700 text-white px-5 py-2.5 rounded-xl font-semibold text-sm shadow-md shadow-brandGreen/20 transition duration-200">
+                <i class="fa-solid fa-paper-plane mr-2"></i>Schnellbestellung
+            </a>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <header class="hero-bg text-white py-24 px-6 relative">
+        <div class="max-w-5xl mx-auto text-center">
+            <span class="bg-brandEmerald/20 text-brandEmerald border border-brandEmerald/30 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider inline-block mb-6">
+                Ihr verlässlicher Partner in Boppard & Umgebung
+            </span>
+            <h1 class="text-4xl md:text-6xl font-black text-white tracking-tight leading-tight mb-6">
+                Ihr Getränkepartner für <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-teal-200">Gastronomie, Events & Zuhause.</span>
+            </h1>
+            <p class="text-lg md:text-xl text-slate-300 max-w-3xl mx-auto mb-10 leading-relaxed font-normal">
+                Über 500 Getränkesorten, flexibler Lieferservice, Festinventarverleih und automatisierte B2B-Bestellabwicklung für Gastronomiebetriebe im Mittelrheintal.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+                <a href="#b2b-portal" class="w-full sm:w-auto bg-brandGreen hover:bg-emerald-600 text-white px-8 py-4 rounded-xl font-bold text-base shadow-lg shadow-brandGreen/30 transition">
+                    <i class="fa-solid fa-truck-ramp-box mr-2"></i> B2B Bestellung aufgeben
+                </a>
+                <a href="#event-calculator" class="w-full sm:w-auto bg-white/10 hover:bg-white/20 border border-white/20 text-white px-8 py-4 rounded-xl font-bold text-base backdrop-blur transition">
+                    <i class="fa-solid fa-calculator mr-2"></i> Event-Getränke berechnen
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- STATS BAR -->
+    <section class="bg-white py-8 border-b border-slate-200 shadow-sm">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+            <div>
+                <div class="text-3xl font-extrabold text-slate-900">30+</div>
+                <div class="text-xs text-slate-500 uppercase tracking-wider font-semibold mt-1">Sorten Fassbier</div>
+            </div>
+            <div>
+                <div class="text-3xl font-extrabold text-slate-900">100+</div>
+                <div class="text-xs text-slate-500 uppercase tracking-wider font-semibold mt-1">Sorten Flaschenbier</div>
+            </div>
+            <div>
+                <div class="text-3xl font-extrabold text-slate-900">200+</div>
+                <div class="text-xs text-slate-500 uppercase tracking-wider font-semibold mt-1">Wässer & Erfrischungen</div>
+            </div>
+            <div>
+                <div class="text-3xl font-extrabold text-brandGreen">KI-Support</div>
+                <div class="text-xs text-slate-500 uppercase tracking-wider font-semibold mt-1">24/7 E-Mail Bestellannahme</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="py-20 px-6 max-w-7xl mx-auto">
+        <div class="text-center max-w-2xl mx-auto mb-16">
+            <h2 class="text-xs font-bold text-brandGreen uppercase tracking-widest mb-2">Unsere Geschäftsfelder</h2>
+            <p class="text-3xl font-black text-slate-900">Alles aus einer Hand für Gewerbe & Privat</p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+            <!-- Card 1 -->
+            <div class="bg-white p-8 rounded-2xl border border-slate-200/80 shadow-sm hover:shadow-md transition">
+                <div class="w-12 h-12 bg-emerald-50 text-brandGreen rounded-xl flex items-center justify-center text-xl font-bold mb-6">
+                    <i class="fa-solid fa-utensils"></i>
+                </div>
+                <h3 class="text-xl font-bold text-slate-900 mb-3">Gastronomie & Großhandel</h3>
+                <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                    Zuverlässige Pünktlichkeit für Restaurants, Hotels & Bars in Boppard. Flexible Lieferfenster und automatische Bestätigung Ihrer Bestellungen.
+                </p>
+                <ul class="text-xs text-slate-500 space-y-2">
+                    <li><i class="fa-solid fa-check text-brandGreen mr-2"></i>Kauf auf Rechnung</li>
+                    <li><i class="fa-solid fa-check text-brandGreen mr-2"></i>Express-Nachlieferung bei Engpässen</li>
+                </ul>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="bg-white p-8 rounded-2xl border border-slate-200/80 shadow-sm hover:shadow-md transition">
+                <div class="w-12 h-12 bg-amber-50 text-brandGold rounded-xl flex items-center justify-center text-xl font-bold mb-6">
+                    <i class="fa-solid fa-champagne-glasses"></i>
+                </div>
+                <h3 class="text-xl font-bold text-slate-900 mb-3">Fest- & Eventservice</h3>
+                <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                    Ob Vereinsfest, Hochzeit oder Firmen-Event: Wir liefern gekühlte Getränke, Gläser, Zapfanlagen und Kühlanhänger bequem direkt zum Veranstaltungsort.
+                </p>
+                <ul class="text-xs text-slate-500 space-y-2">
+                    <li><i class="fa-solid fa-check text-brandGold mr-2"></i>Kauf auf Kommission (Volle Flexibilität)</li>
+                    <li><i class="fa-solid fa-check text-brandGold mr-2"></i>Verleih von Schankausstattung</li>
+                </ul>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="bg-white p-8 rounded-2xl border border-slate-200/80 shadow-sm hover:shadow-md transition">
+                <div class="w-12 h-12 bg-slate-100 text-slate-800 rounded-xl flex items-center justify-center text-xl font-bold mb-6">
+                    <i class="fa-solid fa-store"></i>
+                </div>
+                <h3 class="text-xl font-bold text-slate-900 mb-3">EPONA Getränkemarkt</h3>
+                <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                    Besuchen Sie unseren Getränkefachmarkt im Mühltal Boppard. Barrierefreies Einkaufen, große Auswahl an regionalen Weinen und entspanntes Parken direkt vor der Tür.
+                </p>
+                <ul class="text-xs text-slate-500 space-y-2">
+                    <li><i class="fa-solid fa-check text-slate-700 mr-2"></i>Kostenfreie Kundenparkplätze</li>
+                    <li><i class="fa-solid fa-check text-slate-700 mr-2"></i>Freundlicher Einladeservice</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- EVENT CALCULATOR WIDGET -->
+    <section id="event-calculator" class="bg-slate-900 text-white py-20 px-6">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-10">
+                <span class="bg-brandGreen/20 text-brandEmerald px-3 py-1 rounded-full text-xs font-semibold uppercase">Interaktives Tool</span>
+                <h2 class="text-3xl font-extrabold mt-3">Event-Mengenrechner</h2>
+                <p class="text-slate-400 text-sm mt-2">Schätzen Sie schnell Ihren Getränkebedarf für Ihre geplante Feier.</p>
+            </div>
+
+            <div class="bg-slate-800/80 p-8 rounded-2xl border border-slate-700 backdrop-blur grid md:grid-cols-2 gap-8 items-center">
+                <div class="space-y-6">
+                    <div>
+                        <label class="block text-xs font-medium text-slate-300 mb-2">Anzahl der Gäste</label>
+                        <input type="range" id="guestCount" min="10" max="200" value="50" class="w-full accent-brandGreen" oninput="calculateBeverages()">
+                        <div class="flex justify-between text-xs text-slate-400 mt-1">
+                            <span>10 Personen</span>
+                            <span id="guestDisplay" class="text-brandEmerald font-bold text-base">50 Gäste</span>
+                            <span>200 Personen</span>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-xs font-medium text-slate-300 mb-2">Dauer der Feier (Stunden)</label>
+                        <input type="range" id="duration" min="2" max="12" value="6" class="w-full accent-brandGreen" oninput="calculateBeverages()">
+                        <div class="flex justify-between text-xs text-slate-400 mt-1">
+                            <span>2 Std.</span>
+                            <span id="durationDisplay" class="text-brandEmerald font-bold text-base">6 Std.</span>
+                            <span>12 Std.</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-slate-900 p-6 rounded-xl border border-slate-700 text-center">
+                    <h3 class="text-xs uppercase text-slate-400 tracking-wider font-semibold mb-4">Empfohlener Richtwert (auf Kommission)</h3>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="bg-slate-800 p-3 rounded-lg">
+                            <span id="beerResult" class="block text-2xl font-black text-brandEmerald">3 Kästen</span>
+                            <span class="text-[11px] text-slate-400">Bier / Fassbier</span>
+                        </div>
+                        <div class="bg-slate-800 p-3 rounded-lg">
+                            <span id="waterResult" class="block text-2xl font-black text-brandEmerald">4 Kästen</span>
+                            <span class="text-[11px] text-slate-400">Wasser / Softdrinks</span>
+                        </div>
+                    </div>
+                    <p class="text-[10px] text-slate-500 mt-4">*Alle ungeöffneten Kästen nehmen wir nach dem Event kostenfrei zurück.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- B2B AUTOMATED ORDER PORTAL -->
+    <section id="b2b-portal" class="py-20 px-6 max-w-4xl mx-auto">
+        <div class="bg-white rounded-2xl shadow-xl border border-slate-200 overflow-hidden">
+            <div class="bg-brandDark text-white p-8">
+                <span class="bg-brandEmerald/20 text-brandEmerald px-3 py-1 rounded-full text-xs font-semibold uppercase">Für Gastronomie & Firmen</span>
+                <h2 class="text-2xl font-extrabold mt-3">Digitale Direct-Bestellung</h2>
+                <p class="text-slate-400 text-sm mt-1">Ihre Bestellung wird sofort von unserem Automationssystem strukturiert und bestätigt.</p>
+            </div>
+            
+            <form class="p-8 space-y-6" onsubmit="event.preventDefault(); alert('Ihre Test-Bestellung wurde verarbeitet und an die Automations-Pipeline übermittelt.');">
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-xs font-bold text-slate-700 uppercase mb-2">Betrieb / Kundenname *</label>
+                        <input type="text" placeholder="z.B. Gasthaus zum Hirsch" required class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brandGreen focus:outline-none text-sm">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold text-slate-700 uppercase mb-2">Gewünschter Liefertag *</label>
+                        <input type="date" required class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brandGreen focus:outline-none text-sm">
+                    </div>
+                </div>
+
+                <div>
+                    <label class="block text-xs font-bold text-slate-700 uppercase mb-2">Lieferadresse *</label>
+                    <input type="text" placeholder="Straße, Hausnummer, PLZ, Ort" required class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brandGreen focus:outline-none text-sm">
+                </div>
+
+                <div>
+                    <label class="block text-xs font-bold text-slate-700 uppercase mb-2">Getränkebestellung (Artikel & Mengen) *</label>
+                    <textarea rows="4" placeholder="Beispiel:&#10;- 4 Kästen Bitburger Pils (0,5l)&#10;- 2 Fässer Benediktiner Weissbier (30l)&#10;- 3 Kästen Gerolsteiner Sprudel" required class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brandGreen focus:outline-none text-sm"></textarea>
+                </div>
+
+                <div class="flex items-center justify-between pt-4 border-t border-slate-100">
+                    <span class="text-xs text-slate-500"><i class="fa-solid fa-lock mr-1"></i>DSGVO-konforme Übermittlung</span>
+                    <button type="submit" class="bg-brandGreen hover:bg-emerald-700 text-white px-8 py-3 rounded-xl font-bold text-sm shadow-md transition">
+                        Bestellung absenden
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- FOOTER / CONTACT -->
+    <footer id="contact" class="bg-slate-900 text-slate-400 py-12 px-6 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-3 gap-8 text-sm">
+            <div>
+                <h4 class="text-white font-bold text-base mb-3">Martin Weinand Getränkefachgroßhandel</h4>
+                <p>Inhaber: Michael Weinand</p>
+                <p class="mt-2">Mühltal 102<br>56154 Boppard</p>
+            </div>
+            <div>
+                <h4 class="text-white font-bold text-base mb-3">Kontakt</h4>
+                <p>Telefon: <a href="tel:+4967422037" class="hover:text-white">06742 / 2037</a></p>
+                <p>Fax: 06742 / 2038</p>
+                <p>E-Mail: <a href="mailto:getraenke-weinand@t-online.de" class="hover:text-white">getraenke-weinand@t-online.de</a></p>
+            </div>
+            <div>
+                <h4 class="text-white font-bold text-base mb-3">Öffnungszeiten Markt</h4>
+                <p>Montag – Freitag: 08:30 – 19:00 Uhr</p>
+                <p>Samstag: 08:30 – 16:00 Uhr</p>
+                <p class="text-xs text-brandEmerald mt-2">Lieferdienst nach Vereinbarung</p>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto border-t border-slate-800 mt-10 pt-6 text-center text-xs text-slate-500">
+            © 2026 Getränke Weinand Boppard. Alle Rechte vorbehalten. | Impressum | Datenschutz
+        </div>
+    </footer>
+
+    <!-- INTERACTIVE CALCULATOR SCRIPT -->
+    <script>
+        function calculateBeverages() {
+            const guests = document.getElementById('guestCount').value;
+            const hours = document.getElementById('duration').value;
+            
+            document.getElementById('guestDisplay').innerText = guests + " Gäste";
+            document.getElementById('durationDisplay').innerText = hours + " Std.";
+
+            // Simple estimation logic
+            const totalDrinks = guests * (hours * 0.8);
+            const beerCrates = Math.ceil((totalDrinks * 0.4) / 20); // 20 bottles per crate
+            const waterCrates = Math.ceil((totalDrinks * 0.6) / 12); // 12 bottles per crate
+
+            document.getElementById('beerResult').innerText = beerCrates + " Kästen";
+            document.getElementById('waterResult').innerText = waterCrates + " Kästen";
+        }
+    </script>
+</body>
+</html>
