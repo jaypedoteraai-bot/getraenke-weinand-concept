@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Getränke Weinand | Getränkefachgroßhandel & Markt Boppard</title>
-    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -20,7 +19,6 @@
             }
         }
     </script>
-    <!-- FontAwesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         .hero-bg {
@@ -30,7 +28,6 @@
 </head>
 <body class="bg-slate-50 text-slate-800 font-sans antialiased">
 
-    <!-- TOP BAR -->
     <div class="bg-brandDark text-slate-300 text-xs py-2 px-6 flex justify-between items-center border-b border-slate-800">
         <div class="flex items-center space-x-6">
             <span><i class="fa-solid fa-location-dot text-brandEmerald mr-2"></i>Mühltal 102, 56154 Boppard</span>
@@ -42,16 +39,13 @@
         </div>
     </div>
 
-    <!-- NAVIGATION -->
     <nav class="sticky top-0 z-50 bg-white/95 backdrop-blur shadow-sm border-b border-slate-100">
-        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-            <div class="flex items-center space-x-3">
-                <div class="w-10 h-10 bg-brandGreen text-white rounded-xl flex items-center flex-shrink-0 justify-center font-bold text-xl shadow-md shadow-brandGreen/20">
-                    <i class="fa-solid fa-wine-bottle"></i>
-                </div>
-                <div>
-                    <span class="text-xl font-extrabold text-slate-900 tracking-tight block leading-none">Getränke Weinand</span>
-                    <span class="text-xs text-slate-500 font-medium">Großhandel & EPONA Fachmarkt</span>
+        <div class="max-w-7xl mx-auto px-6 py-3 flex justify-between items-center">
+            <div class="flex items-center space-x-4">
+                <img src="logo.png" alt="Getränke Weinand Logo" class="h-12 w-auto object-contain">
+                <div class="hidden sm:block border-l border-slate-200 pl-3">
+                    <span class="text-xs text-slate-500 font-medium block">Großhandel & EPONA Markt</span>
+                    <span class="text-[10px] text-brandGreen font-bold uppercase tracking-wider">Boppard am Rhein</span>
                 </div>
             </div>
             
@@ -69,9 +63,13 @@
         </div>
     </nav>
 
-    <!-- HERO SECTION -->
-    <header class="hero-bg text-white py-24 px-6 relative">
+    <header class="hero-bg text-white py-20 px-6 relative">
         <div class="max-w-5xl mx-auto text-center">
+            <div class="mb-6 flex justify-center">
+                <div class="bg-white/95 p-4 rounded-2xl shadow-xl backdrop-blur max-w-xs sm:max-w-sm">
+                    <img src="logo.png" alt="Getränke Weinand Logo" class="w-full h-auto object-contain">
+                </div>
+            </div>
             <span class="bg-brandEmerald/20 text-brandEmerald border border-brandEmerald/30 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider inline-block mb-6">
                 Ihr verlässlicher Partner in Boppard & Umgebung
             </span>
@@ -92,7 +90,6 @@
         </div>
     </header>
 
-    <!-- STATS BAR -->
     <section class="bg-white py-8 border-b border-slate-200 shadow-sm">
         <div class="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
             <div>
@@ -114,7 +111,6 @@
         </div>
     </section>
 
-    <!-- SERVICES -->
     <section id="services" class="py-20 px-6 max-w-7xl mx-auto">
         <div class="text-center max-w-2xl mx-auto mb-16">
             <h2 class="text-xs font-bold text-brandGreen uppercase tracking-widest mb-2">Unsere Geschäftsfelder</h2>
@@ -122,7 +118,6 @@
         </div>
 
         <div class="grid md:grid-cols-3 gap-8">
-            <!-- Card 1 -->
             <div class="bg-white p-8 rounded-2xl border border-slate-200/80 shadow-sm hover:shadow-md transition">
                 <div class="w-12 h-12 bg-emerald-50 text-brandGreen rounded-xl flex items-center justify-center text-xl font-bold mb-6">
                     <i class="fa-solid fa-utensils"></i>
@@ -137,7 +132,6 @@
                 </ul>
             </div>
 
-            <!-- Card 2 -->
             <div class="bg-white p-8 rounded-2xl border border-slate-200/80 shadow-sm hover:shadow-md transition">
                 <div class="w-12 h-12 bg-amber-50 text-brandGold rounded-xl flex items-center justify-center text-xl font-bold mb-6">
                     <i class="fa-solid fa-champagne-glasses"></i>
@@ -152,7 +146,6 @@
                 </ul>
             </div>
 
-            <!-- Card 3 -->
             <div class="bg-white p-8 rounded-2xl border border-slate-200/80 shadow-sm hover:shadow-md transition">
                 <div class="w-12 h-12 bg-slate-100 text-slate-800 rounded-xl flex items-center justify-center text-xl font-bold mb-6">
                     <i class="fa-solid fa-store"></i>
@@ -169,7 +162,6 @@
         </div>
     </section>
 
-    <!-- EVENT CALCULATOR WIDGET -->
     <section id="event-calculator" class="bg-slate-900 text-white py-20 px-6">
         <div class="max-w-4xl mx-auto">
             <div class="text-center mb-10">
@@ -219,7 +211,6 @@
         </div>
     </section>
 
-    <!-- B2B AUTOMATED ORDER PORTAL -->
     <section id="b2b-portal" class="py-20 px-6 max-w-4xl mx-auto">
         <div class="bg-white rounded-2xl shadow-xl border border-slate-200 overflow-hidden">
             <div class="bg-brandDark text-white p-8">
@@ -260,11 +251,11 @@
         </div>
     </section>
 
-    <!-- FOOTER / CONTACT -->
     <footer id="contact" class="bg-slate-900 text-slate-400 py-12 px-6 border-t border-slate-800">
         <div class="max-w-7xl mx-auto grid md:grid-cols-3 gap-8 text-sm">
             <div>
-                <h4 class="text-white font-bold text-base mb-3">Martin Weinand Getränkefachgroßhandel</h4>
+                <img src="logo.png" alt="Getränke Weinand Logo" class="h-12 w-auto bg-white p-2 rounded-lg mb-4">
+                <h4 class="text-white font-bold text-base mb-1">Martin Weinand Getränkefachgroßhandel</h4>
                 <p>Inhaber: Michael Weinand</p>
                 <p class="mt-2">Mühltal 102<br>56154 Boppard</p>
             </div>
@@ -286,7 +277,6 @@
         </div>
     </footer>
 
-    <!-- INTERACTIVE CALCULATOR SCRIPT -->
     <script>
         function calculateBeverages() {
             const guests = document.getElementById('guestCount').value;
