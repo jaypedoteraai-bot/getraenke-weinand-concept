@@ -259,40 +259,33 @@
     </section>
 
    <script>
-    document.getElementById('orderForm').addEventListener('submit', async function(e) {
+    document.getElementById('orderForm').addEventListener('submit', function(e) {
         e.preventDefault();
         
         const btn = document.getElementById('submitBtn');
         btn.innerText = 'Wird gesendet...';
         btn.disabled = true;
 
-        const payload = {
-            customer_name: document.getElementById('customer_name').value,
-            delivery_date: document.getElementById('delivery_date').value,
-            address: document.getElementById('address').value,
-            items: document.getElementById('items').value
-        };
+        const formData = new URLSearchParams();
+        formData.append('customer_name', document.getElementById('customer_name').value);
+        formData.append('delivery_date', document.getElementById('delivery_date').value);
+        formData.append('address', document.getElementById('address').value);
+        formData.append('items', document.getElementById('items').value);
 
-        try {
-            // Using no-cors mode to bypass browser network blocks
-            await fetch('https://hook.us2.make.com/asfmy9zfixhh6ntfq8v186rbj8kf6r9x', {
-                method: 'POST',
-                mode: 'no-cors',
-                headers: { 
-                    'Content-Type': 'application/json' 
-                },
-                body: JSON.stringify(payload)
-            });
-
-            // With no-cors, browser receives an opaque response and triggers success
+        fetch('https://hook.us2.make.com/asfmy9zfixhh6ntfq8v186rbj8kf6r9x', {
+            method: 'POST',
+            body: formData
+        })
+        .then(() => {
             alert('Vielen Dank! Ihre Bestellung wurde erfolgreich verarbeitet.');
             document.getElementById('orderForm').reset();
-            
-        } catch (err) {
-            alert('Netzwerkfehler. Bitte erneut versuchen.');
-        } finally {
+        })
+        .catch(() => {
+            alert('Fehler beim Senden. Bitte erneut versuchen.');
+        })
+        .finally(() => {
             btn.innerText = 'Bestellung absenden';
             btn.disabled = false;
-        }
+        });
     });
 </script>
